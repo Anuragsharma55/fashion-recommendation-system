@@ -188,7 +188,7 @@ if uploaded_files:
             img = Image.open(io.BytesIO(uf.read())).convert('RGB')
             uploaded_pil.append((uf.name, img))
             with cols_preview[i]:
-                st.image(enhance_display(img:=img.copy() if 'img' in locals() else img), caption=uf.name, use_column_width=True)
+                st.image(enhance_display(img:=img.copy() if 'img' in locals() else img), caption=uf.name, use_container_width=True)
         except Exception as e:
             st.error(f"Could not read {uf.name}: {e}")
 
