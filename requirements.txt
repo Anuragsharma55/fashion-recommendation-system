@@ -1,5 +1,5 @@
 streamlit
 numpy
 pillow
-tensorflow
+tensorflow-cpu
 faiss-cpu

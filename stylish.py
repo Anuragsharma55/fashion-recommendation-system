@@ -18,7 +18,7 @@ RECOMMEND_PER_UPLOAD = 5
 # Utilities & caching
 # ---------------------------
 @st.cache_data(show_spinner=True)
-def load_embeddings(emb_path='embeddings_all.pkl', filenames_path='filenames_all.pkl'):
+def load_embeddings(emb_path='embeddings_demo.pkl', filenames_path='filenames_demo.pkl'):
     if not os.path.exists(emb_path) or not os.path.exists(filenames_path):
         raise FileNotFoundError(f"Place '{emb_path}' and '{filenames_path}' in the project folder.")
     embeddings = np.array(pickle.load(open(emb_path, 'rb')))

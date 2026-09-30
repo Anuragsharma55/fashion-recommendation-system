@@ -5,3 +5,5 @@ uploads/
 __pycache__/
 *.pyc
 *.pkl
+!embeddings_demo.pkl
+!filenames_demo.pkl
