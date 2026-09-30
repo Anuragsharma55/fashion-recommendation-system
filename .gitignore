@@ -1,0 +1,7 @@
+.venv/
+.idea/
+images/
+uploads/
+__pycache__/
+*.pyc
+*.pkl
